@@ -108,7 +108,10 @@ public class ProductRepositoryTest {
     }
     @Test
     public void confirmaRetornoListaVaziaAoInicializar(){
-
+        //Arrange e Act
+        List<Product>  listavazia = productRepository.getAll();
+        //Assert
+        assertTrue(listavazia.isEmpty());
     }
 
 }
